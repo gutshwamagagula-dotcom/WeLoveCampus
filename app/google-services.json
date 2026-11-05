@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "340885318402",
+    "project_id": "welovecampus-84805",
+    "storage_bucket": "welovecampus-84805.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340885318402:android:fbe03ef2204b9911d1301b",
+        "android_client_info": {
+          "package_name": "com.welovecampus.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzdMlDiug2pGd1PaD_TeorsCvC9yJW2dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,5 +9,4 @@
 .externalNativeBuild/
 .cxx/
 # Firebase config is per-project - each developer downloads their own
-/app/google-services.json
 /functions/node_modules/
