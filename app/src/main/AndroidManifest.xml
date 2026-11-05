@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name=".WeLoveCampusApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeLoveCampus"
+        tools:targetApi="34">
+
+        <!-- Launcher: sends the user to MainActivity if already signed in -->
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.auth.RegisterActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.main.MainActivity" android:exported="false" />
+        <activity android:name=".ui.assignments.AssignmentDetailActivity" android:exported="false" />
+        <activity android:name=".ui.notes.NoteEditorActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.discussions.DiscussionsActivity" android:exported="false" />
+        <activity android:name=".ui.discussions.ThreadDetailActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.announcements.AnnouncementsActivity" android:exported="false" />
+        <activity android:name=".ui.events.EventsActivity" android:exported="false" />
+        <activity android:name=".ui.profile.ProfileActivity" android:exported="false" />
+
+        <!-- Receives Firebase Cloud Messaging pushes -->
+        <service
+            android:name=".notifications.WlcMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Lets AppCompat remember the chosen language on Android 12 and lower -->
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="announcements" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+    </application>
+</manifest>

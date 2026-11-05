@@ -1,0 +1,45 @@
+rules_version = '2';
+// Paste into Firebase console > Firestore Database > Rules, then Publish.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function isOwner(uid) { return signedIn() && request.auth.uid == uid; }
+
+    // Each student can only read/write their own profile, notes and submission status
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+      match /{sub=**} {
+        allow read, write: if isOwner(uid);
+      }
+    }
+
+    // Institution data: every signed-in student can read.
+    // DEMO MODE: signed-in users may also write so the app can seed sample data.
+    // For a real deployment change "allow write: if signedIn();" to "allow write: if false;"
+    // and publish data from the Firebase console or an admin tool instead.
+    match /modules/{id}       { allow read: if signedIn(); allow write: if signedIn(); }
+    match /timetable/{id}     { allow read: if signedIn(); allow write: if signedIn(); }
+    match /assignments/{id}   { allow read: if signedIn(); allow write: if signedIn(); }
+    match /announcements/{id} { allow read: if signedIn(); allow write: if signedIn(); }
+    match /events/{id}        { allow read: if signedIn(); allow write: if signedIn(); }
+
+    // Discussions: anyone signed in can read and post; only the author can edit/delete
+    match /discussions/{threadId} {
+      allow read: if signedIn();
+      allow create: if signedIn() && (request.resource.data.authorUid == request.auth.uid
+                                       || request.resource.data.authorUid == "demo");
+      // others may only bump the reply counter / last activity time
+      allow update: if signedIn() && (resource.data.authorUid == request.auth.uid
+                      || request.resource.data.diff(resource.data).affectedKeys().hasOnly(['replyCount', 'lastActivity'])
+                      || resource.data.authorUid == "demo");
+      allow delete: if signedIn() && resource.data.authorUid == request.auth.uid;
+
+      match /replies/{replyId} {
+        allow read: if signedIn();
+        allow create: if signedIn() && request.resource.data.authorUid == request.auth.uid;
+        allow update, delete: if signedIn() && resource.data.authorUid == request.auth.uid;
+      }
+    }
+  }
+}

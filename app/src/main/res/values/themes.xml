@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.WeLoveCampus" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/crimson</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/cream</item>
+        <item name="colorOnPrimaryContainer">@color/ink</item>
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorOnSecondary">@color/ink</item>
+        <item name="colorSecondaryContainer">@color/gold</item>
+        <item name="colorOnSecondaryContainer">@color/ink</item>
+        <item name="colorSurface">@color/background</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/crimson_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialCardViewStyle">@style/Widget.WLC.Card</item>
+    </style>
+
+    <!-- Red app bar with white title and icons -->
+    <style name="Widget.WLC.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/crimson</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/cream</item>
+        <item name="navigationIconTint">@color/white</item>
+    </style>
+
+    <style name="Widget.WLC.Card" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/cream</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="TextAppearance.WLC.Section" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.WLC.Secondary" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="LanguageLink">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/crimson</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="LanguageDivider">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">|</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="SectionHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.WLC.Section</item>
+    </style>
+
+    <style name="EmptyText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">32dp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="MoreRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/bg_more_row</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:drawableTint">@color/crimson</item>
+        <item name="android:drawableEnd">@drawable/ic_chevron_right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="WeekdayLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SettingsCardTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:textColor">@color/crimson</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SettingsSwitch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+</resources>

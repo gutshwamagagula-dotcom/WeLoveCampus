@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- English (default). isiZulu: values-zu, Afrikaans: values-af -->
+    <string name="app_name" translatable="false">We Love Campus</string>
+    <string name="tagline">Your college, in one app</string>
+    <string name="app_logo">We Love Campus logo</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="or_institution">or sign in with your institution account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_helper">At least 6 characters</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="full_name">Full name</string>
+    <string name="institution_sign_in">Institution Sign-In</string>
+    <string name="create_account">Create account</string>
+    <string name="register_intro">Create a We Love Campus account with your student email address.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="lang_english" translatable="false">English</string>
+    <string name="lang_zulu" translatable="false">isiZulu</string>
+    <string name="lang_afrikaans" translatable="false">Afrikaans</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="setting_up">Setting up your campus…</string>
+    <string name="google_not_configured_title">Google sign-in not set up</string>
+    <string name="google_not_configured_msg">Enable Google as a sign-in provider in the Firebase console, add your SHA-1 fingerprint, then download google-services.json again and rebuild. See the manual, section 3.</string>
+    <string name="error_google_sign_in">Google sign-in failed. Please try again.</string>
+    <string name="error_no_google_account">No Google account found on this device. Add one in Settings or use Institution Sign-In.</string>
+    <string name="error_with_reason">Something went wrong: %1$s</string>
+    <string name="error_invalid_email">Enter a valid email address</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_name_required">Please enter your name</string>
+    <string name="error_enter_email_first">Enter your email first, then tap Forgot password</string>
+    <string name="error_sign_in_failed">Sign-in failed: %1$s</string>
+    <string name="error_register_failed">Could not create account: %1$s</string>
+    <string name="error_setup">Signed in, but setup did not finish: %1$s. Pull down on the Dashboard to retry.</string>
+    <string name="reset_email_sent">Password reset email sent</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_timetable">Time</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_more">More</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_timetable">Timetable</string>
+    <string name="title_assignments">Assignments</string>
+    <string name="title_notes">Offline Notes</string>
+    <string name="title_more">More</string>
+    <string name="title_discussions">Discussions</string>
+    <string name="title_announcements">Announcements</string>
+    <string name="title_events">Event Calendar</string>
+    <string name="title_profile">Profile &amp; Settings</string>
+    <string name="greeting">Hi, %1$s</string>
+    <string name="next_class">NEXT CLASS</string>
+    <string name="next_class_value">%1$s – %2$s %3$s, %4$s</string>
+    <string name="no_classes">No classes scheduled</string>
+    <string name="choose_modules_prompt">You are not enrolled in any modules yet. Tap here to choose your modules.</string>
+    <string name="clash_warning">%1$d timetable clash(es) found – tap to check</string>
+    <string name="due_soon">Due Soon</string>
+    <string name="nothing_due">Nothing due – nice work!</string>
+    <string name="see_all">See all</string>
+    <string name="calendar">Calendar</string>
+    <string name="no_announcements">No announcements yet</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="no_upcoming_events">No upcoming events</string>
+    <string name="streak">Streak</string>
+    <string name="streak_value">%1$d-day check-in streak • %2$d pts</string>
+    <string name="badges_count">%1$d badges earned</string>
+    <string name="check_in">Check in</string>
+    <string name="checked_in_today">Checked in ✓</string>
+    <string name="checked_in_result">Checked in! Streak: %1$d days • %2$d pts</string>
+    <string name="need_internet_check_in">Check-in needs an internet connection</string>
+    <string name="offline_showing_cache">You are offline – showing saved data</string>
+    <string name="no_classes_today">No classes on this day</string>
+    <string name="class_details">Time: %1$s – %2$s
+Lecturer: %3$s
+Venue: %4$s</string>
+    <string name="open_link">Open link</string>
+    <string name="tab_open">Open</string>
+    <string name="tab_submitted">Submitted</string>
+    <string name="tab_missing">Missing</string>
+    <string name="no_assignments">No assignments here</string>
+    <string name="due_on">Due %1$s</string>
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low</string>
+    <string name="assignment_details">Assignment</string>
+    <string name="instructions">Instructions</string>
+    <string name="no_description">No instructions provided.</string>
+    <string name="mark_submitted">Mark as submitted</string>
+    <string name="mark_submitted_confirm">Mark \"%1$s\" as submitted? Do this after you have handed it in on your institution\'s portal.</string>
+    <string name="submission_saved">Marked as submitted</string>
+    <string name="saved_offline_will_sync">Saved on your phone – it will sync when you are back online</string>
+    <string name="submitted_on">Submitted %1$s</string>
+    <string name="submitted_on_pending">Submitted %1$s (waiting to sync)</string>
+    <string name="search_notes">Search notes</string>
+    <string name="all">All</string>
+    <string name="no_notes">No notes yet. Tap + to write your first note – it works offline.</string>
+    <string name="status_synced">Synced</string>
+    <string name="status_pending">Pending sync</string>
+    <string name="sync_now">Sync now</string>
+    <string name="sync_complete">Sync complete</string>
+    <string name="offline_notes_safe">You are offline. Your notes are safe on this phone and will sync automatically.</string>
+    <string name="untitled_note">Untitled note</string>
+    <string name="new_note">New note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="note_title">Title</string>
+    <string name="note_content">Write your note…</string>
+    <string name="module">Module</string>
+    <string name="tag">Tag</string>
+    <string name="general">General</string>
+    <string name="notes_offline_hint">Notes are saved on your phone first, so you never lose them without signal. They upload automatically when you are online.</string>
+    <string name="error_note_empty">Add a title or some text first</string>
+    <string name="note_saved">Note saved</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="delete_note">Delete note</string>
+    <string name="delete_note_confirm">This note will be deleted from all your devices.</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="board_for">%1$s discussion board</string>
+    <string name="no_threads">No threads yet – start the conversation!</string>
+    <string name="no_modules_enrolled">You are not enrolled in any modules. Choose them under Profile &amp; Settings.</string>
+    <string name="new_thread">New thread</string>
+    <string name="new_thread_in">New thread in %1$s</string>
+    <string name="thread_title">Title</string>
+    <string name="thread_body">What would you like to discuss?</string>
+    <string name="post">Post</string>
+    <string name="error_title_required">A title is required</string>
+    <string name="thread">Thread</string>
+    <string name="thread_meta">%1$s • %2$s</string>
+    <string name="write_reply">Write a reply…</string>
+    <string name="send">Send</string>
+    <string name="you">You</string>
+    <string name="student">Student</string>
+    <string name="category_academic">Academic</string>
+    <string name="category_administrative">Administrative</string>
+    <string name="category_emergency">Emergency</string>
+    <string name="events_on">Events on %1$s</string>
+    <string name="no_events">No events</string>
+    <string name="show_upcoming">Show upcoming</string>
+    <string name="previous_month">Previous month</string>
+    <string name="next_month">Next month</string>
+    <string name="wd_mon">Mon</string>
+    <string name="wd_tue">Tue</string>
+    <string name="wd_wed">Wed</string>
+    <string name="wd_thu">Thu</string>
+    <string name="wd_fri">Fri</string>
+    <string name="wd_sat">Sat</string>
+    <string name="wd_sun">Sun</string>
+    <string name="achievements">Achievements</string>
+    <string name="badge_earned">You have earned this badge!</string>
+    <string name="badge_locked">Not unlocked yet.</string>
+    <string name="badge_unlocked">Badge unlocked: %1$s 🎉</string>
+    <string name="badge_first_check_in">First Check-in</string>
+    <string name="badge_first_check_in_desc">Check in on the Dashboard for the first time.</string>
+    <string name="badge_streak_7">7-Day Streak</string>
+    <string name="badge_streak_7_desc">Check in 7 days in a row.</string>
+    <string name="badge_streak_30">30-Day Streak</string>
+    <string name="badge_streak_30_desc">Check in 30 days in a row.</string>
+    <string name="badge_on_time">On Time</string>
+    <string name="badge_on_time_desc">Mark an assignment as submitted before its deadline.</string>
+    <string name="badge_note_taker">Note Taker</string>
+    <string name="badge_note_taker_desc">Save 10 notes.</string>
+    <string name="badge_module_explorer">Module Explorer</string>
+    <string name="badge_module_explorer_desc">Post in the discussion boards of 3 different modules.</string>
+    <string name="badge_century">Century</string>
+    <string name="badge_century_desc">Earn 100 points.</string>
+    <string name="profile_stats">%1$d points • %2$d-day streak</string>
+    <string name="edit">Edit</string>
+    <string name="edit_name">Edit name</string>
+    <string name="language">Language</string>
+    <string name="notification_preferences">Notification preferences</string>
+    <string name="notif_assignments">Assignments due</string>
+    <string name="notif_timetable">Timetable changes</string>
+    <string name="notif_announcements">New announcements</string>
+    <string name="notif_events">Event reminders</string>
+    <string name="notif_discussions">Discussion replies</string>
+    <string name="notif_emergency">Emergency alerts</string>
+    <string name="notif_emergency_locked">Emergency alerts (always on)</string>
+    <string name="my_modules">My modules</string>
+    <string name="change">Change</string>
+    <string name="no_modules_available">No modules available yet – try Sync now first.</string>
+    <string name="offline_sync">Offline sync</string>
+    <string name="sync_status">Last synced: %1$s
+Notes waiting to sync: %2$d</string>
+    <string name="never">never</string>
+    <string name="sync_explainer">The app syncs automatically every 30 minutes and whenever you open it while online.</string>
+    <string name="offline_sync_queued">You are offline – sync will run as soon as you reconnect</string>
+    <string name="reload_demo">Reload demo data</string>
+    <string name="reload_demo_msg">This rewrites the sample modules, timetable, assignments, announcements and events in Firestore with fresh dates. Your notes are not affected.</string>
+    <string name="reload">Reload</string>
+    <string name="demo_reloaded">Demo data reloaded</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_out_confirm">Sign out of We Love Campus? Notes that have not synced yet will be lost.</string>
+    <string name="notif_assignment_due_title">%1$s assignment due soon</string>
+    <string name="notif_assignment_due_body">%1$s is due %2$s</string>
+    <string name="notif_event_title">Coming up: %1$s</string>
+    <string name="notif_event_body">%1$s at %2$s</string>
+    <string name="notif_timetable_changed_title">Timetable updated</string>
+    <string name="notif_timetable_changed_body">Your institution changed your timetable. Tap to see the new times.</string>
+    <plurals name="notes_pending">
+        <item quantity="one">%d note waiting to sync</item>
+        <item quantity="other">%d notes waiting to sync</item>
+    </plurals>
+    <plurals name="replies">
+        <item quantity="one">%d reply</item>
+        <item quantity="other">%d replies</item>
+    </plurals>
+    <string-array name="weekdays_short">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+</resources>

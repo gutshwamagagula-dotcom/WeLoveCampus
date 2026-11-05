@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colours taken from the We Love Campus icon and mock-ups -->
+    <color name="crimson">#C8102E</color>
+    <color name="crimson_dark">#9B0C23</color>
+    <color name="gold">#FFC72C</color>
+    <color name="gold_dark">#E0A800</color>
+    <color name="cream">#FFF8E1</color>
+    <color name="background">#FFFDF7</color>
+    <color name="ink">#1F1A17</color>
+    <color name="grey">#8E8E9A</color>
+    <color name="grey_light">#E4E4EA</color>
+    <color name="card_stroke">#D9D2BF</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Status colours -->
+    <color name="priority_high">#E53935</color>
+    <color name="priority_medium">#FB8C00</color>
+    <color name="priority_low">#43A047</color>
+    <color name="synced">#2E7D32</color>
+    <color name="pending">#EF6C00</color>
+    <color name="emergency">#B71C1C</color>
+    <color name="emergency_bg">#FDECEA</color>
+</resources>

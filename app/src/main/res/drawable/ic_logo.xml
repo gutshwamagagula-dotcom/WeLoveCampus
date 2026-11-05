@@ -1,0 +1,15 @@
+<!-- App icon used on the login screen: crimson rounded square + hub-and-spoke -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp" android:height="120dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#C8102E" android:pathData="M28,10h52a18,18 0,0 1,18 18v52a18,18 0,0 1,-18 18h-52a18,18 0,0 1,-18 -18v-52a18,18 0,0 1,18 -18z" />
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2.5" android:pathData="M54,54L36,36M54,54L72,36M54,54L36,72M54,54L72,72" />
+    <path android:fillColor="#FFC72C" android:pathData="M36,36m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+    <path android:fillColor="#FFC72C" android:pathData="M72,36m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+    <path android:fillColor="#FFC72C" android:pathData="M36,72m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+    <path android:fillColor="#FFC72C" android:pathData="M72,72m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+    <path android:fillColor="#FFFFFF" android:pathData="M54,54m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <path android:fillColor="#C8102E" android:pathData="M45,52L54,47.5L63,52L54,56.5Z" />
+    <path android:fillColor="#C8102E" android:pathData="M53,52h2v10h-2z" />
+    <path android:fillColor="#C8102E" android:pathData="M49,54.5h10v2h-10z" />
+</vector>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/rowDiscussions"
+            style="@style/MoreRow"
+            android:drawableStart="@drawable/ic_forum"
+            android:text="@string/title_discussions" />
+
+        <TextView
+            android:id="@+id/rowAnnouncements"
+            style="@style/MoreRow"
+            android:drawableStart="@drawable/ic_campaign"
+            android:text="@string/title_announcements" />
+
+        <TextView
+            android:id="@+id/rowEvents"
+            style="@style/MoreRow"
+            android:drawableStart="@drawable/ic_event"
+            android:text="@string/title_events" />
+
+        <TextView
+            android:id="@+id/rowProfile"
+            style="@style/MoreRow"
+            android:drawableStart="@drawable/ic_person"
+            android:text="@string/title_profile" />
+    </LinearLayout>
+</ScrollView>
